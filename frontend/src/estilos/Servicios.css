@@ -1,0 +1,30 @@
+.servicio{
+    border: solid 1px grey;
+    border-radius: 8px;
+    padding: 6px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.servicio .info_servicio h3{
+    font-style: italic;
+    color:#004ba2;
+    border-bottom: 1px solid #008267;
+    padding-bottom: 8px;
+}
+
+.servicio .info_servicio p{
+    font-size: 14px;
+}
+
+.servicio img{
+    display: block;
+    border-radius: 8px;
+}
+
+.servicio:nth-child(even){
+    flex-direction: row-reverse;
+}

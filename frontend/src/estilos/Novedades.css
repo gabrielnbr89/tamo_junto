@@ -1,0 +1,42 @@
+.novedad{
+    border: solid 1px grey;
+    border-radius: 8px;
+    padding: 6px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.info_novedad{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.novedad h3{
+    width: 100%;
+    color:#004ba2;
+    border-bottom: 1px solid #008267;
+    padding-bottom: 8px;
+    display: flex;
+}
+
+.subtutulo_cuerpo{
+    flex-direction: column;
+}
+
+.novedad .info_novedad h4{
+    font-style: italic;
+    color:#004ba2;
+    border-bottom: 1px solid #008267;
+    padding-bottom: 8px;
+}
+
+.novedad .info_novedad p{
+    font-size: 14px;
+    text-align: justify;
+}
+
+.novedad .info_novedad img{
+    display: block;
+    border-radius: 8px;
+}

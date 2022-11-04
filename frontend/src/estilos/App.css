@@ -1,0 +1,45 @@
+/* generales */
+/* @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap"); */
+
+body{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 16px;
+  line-height: 20px
+}
+
+.holder{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.fila{
+  display: flex;
+  gap: 15px;
+/*     align-items: center; */
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.columna33{
+  width: 33%;
+  padding: 10px;
+}
+
+.columna67{
+  width:67%;
+  padding: 10px;
+}
+
+.fila .columna33 h3{
+  color:#004ba2;
+  border-bottom: 1px solid #008267;
+  padding-bottom: 8px;
+}
+
+.fila .columna33 img{
+  border-radius: 8px;
+}
+
+.holder p{
+  text-align: justify;
+}
