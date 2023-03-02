@@ -1,13 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
+ 
 
 const Header = (props) => {
+    const [text, setText] = useState("")
+    const [fullText, setFullText] = useState(
+        " mejor"
+    )
+    const [index, setIndex] = useState(0)
+
+    useEffect(() => {
+        if (index < fullText.length) {
+          setTimeout(() => {
+            setText(text + fullText[index])
+            setIndex(index + 1)
+          }, 40)
+        }
+        else{setTimeout(() => {
+            setFullText("")
+            setText("")
+            setIndex(0)
+        },1000)}
+      }, [index,text,fullText])
+
     return (
-        <header>
-                <img src="img/logo_sin_eslogan.png" alt="Al Cuidado" />
-            <div className="holder">
-                <h1>Al Cuidado</h1>
-                <h2>Ayúdanos a ayudar!</h2>
-            </div>
+        <header className='holder' >
+            
+            <h2 >A Tamo junto no diabetes tem como objetivo a gestao de nossos pacientes diabéticos ser mais{text}</h2>
+            
         </header>
     );
 }

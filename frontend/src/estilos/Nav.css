@@ -1,33 +1,85 @@
 nav{
-    background-color: #008267;
-    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
 }
 
-nav ul{
+nav .estatica{
+    
+    flex-grow: 1;
+}
+
+nav .estatica ul{
     list-style: none;
     margin: 0;
     padding:0;
     display: flex;
 }
 
-nav ul li{
+nav .estatica ul li{
     flex-grow: 1;
 }
 
-nav ul li a{
-    color:white;
+nav .estatica ul li a{
+    color: rgb(92, 92, 92);
     text-decoration: none;
     padding: 6px 8px;
     display: block;
     text-align: center;
 }
 
-nav ul li a:hover{
-    background-color: #227be0;
-    color:#732676
+nav .estatica ul li a:hover{
+    color:#732676;
 }
 
-.activo{
-    background-color:#f78215 ;
-    color: #d5070a;
+nav .estatica ul li a.activo{
+    color: #732676;
+}
+
+nav .dinamica{
+    display: none;
+}
+
+@media (max-width: 960px) {
+    .estatica ul{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgb(255, 255, 255);
+        flex-direction: column;
+        width: 100%;
+        height: -webkit-fill-available;        
+        transform: translateX(-100%);
+        transition: 0.3s ease all;
+    }
+    .estatica .items.open{
+        transform: translateX(0) !important;
+    }
+    .dinamica{
+        display: flex !important;
+        flex-direction: column;                
+        margin: 15px;
+    }
+    .dinamica span{
+        width: 30px;
+        height: 4px;
+        background: rgb(0, 0, 0);
+        margin-bottom: 5px;
+        border-radius: 2px;             
+        transform-origin: 5px 0px;
+        transition: all 0.2s linear;
+    }
+
+    .dinamica:hover{
+        cursor: pointer;
+    }
+
+    .dinamica.open > span{
+        transform: rotate(45deg) translate(0px, 0px);
+    }
+    .dinamica.open > span:nth-child(2){
+        display: none;
+    }
+    .dinamica.open > span:nth-child(3){
+        transform: rotate(-45deg) translate(-5px, 1px);
+    }
 }
