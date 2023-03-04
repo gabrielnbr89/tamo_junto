@@ -1,6 +1,17 @@
-header p{
+header h2{
     padding: 10px;
     font-size: 30px;
     line-height:35px;
-    color: #732676;
+    color: rgb(5, 5, 194);
+    text-align: center;
+}
+
+@media (max-width: 960px) {
+header{
+    height: 230px;
+}
+header h2{
+    margin-top: 5px;
+    font-size: 25px;
+}
 }

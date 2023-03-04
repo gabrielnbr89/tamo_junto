@@ -25,14 +25,16 @@ nav .estatica ul li a{
     padding: 6px 8px;
     display: block;
     text-align: center;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 nav .estatica ul li a:hover{
-    color:#732676;
+    color:blue;
 }
 
 nav .estatica ul li a.activo{
-    color: #732676;
+    color: blue;
 }
 
 nav .dinamica{
@@ -53,6 +55,7 @@ nav .dinamica{
     }
     .estatica .items.open{
         transform: translateX(0) !important;
+        z-index: 99;
     }
     .dinamica{
         display: flex !important;
@@ -75,6 +78,7 @@ nav .dinamica{
 
     .dinamica.open > span{
         transform: rotate(45deg) translate(0px, 0px);
+        z-index: 100;
     }
     .dinamica.open > span:nth-child(2){
         display: none;
@@ -82,4 +86,9 @@ nav .dinamica{
     .dinamica.open > span:nth-child(3){
         transform: rotate(-45deg) translate(-5px, 1px);
     }
+    nav img{
+        height: 80px;
+        width: 80px;
+    }
+    
 }
