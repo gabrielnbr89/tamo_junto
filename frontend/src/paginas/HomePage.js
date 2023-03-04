@@ -1,40 +1,76 @@
 import React from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
+
 
 const HomePage = (props) => {
-    return(
+    return (
         <main className="holder">
-        <img src="img/foto_portada.png" alt="portada" />
+            <Carousel className="carousel" autoPlay interval={5000} showThumbs={false}>
+                <div>
+                    <img src="https://via.placeholder.com/960x320" alt="imagen1" />
+                    <p className="legend">Legend 1</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/960x320" alt="imagen2" />
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/960x320" alt="imagen3" />
+                    <p className="legend">Legend 3</p>
+                </div>
+            </Carousel>
 
-        <section>
-            <h2>¡Bienvenido!</h2>
-            <p>Al Cuidado es una plataforma de información sobre diferentes patologías que vincula a asociaciones, pacientes y profesionales con el fin de ponerlos en contacto y facilitar la interacción entre ellos.
-                 Las empresas asociadas facilitan la existencia de nuestra fundación mediante donaciones. Y los médicos y clínicas asociadas realizan el seguimiento de pacientes de forma voluntaria.
-                  Navegá por nuestro sitio y enterate que servicios prestamos y cómo podés formar parte de nuestro equipo.
-            </p>
-        </section>
-        <hr/>
-        <div className="fila">
-            <div className="columna33">
-                <h3>Proximo evento</h3>
-                <a href="agenda"></a>
-                <img src="img/calendario.png" alt="foto_agenda"/>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt amet accusamus voluptatum repellat fugit, saepe adipisci voluptatem possimus est dolor molestias ullam neque ipsam in maxime ut a dolore deleniti!</p>
+
+            <section>
+                <h2>Bem-vindo!</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt amet accusamus voluptatum repellat fugit, saepe adipisci voluptatem possimus est dolor molestias ullam neque ipsam in maxime ut a dolore deleniti!
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt amet accusamus voluptatum repellat fugit, saepe adipisci voluptatem possimus est dolor molestias ullam neque ipsam in maxime ut a dolore deleniti!
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt amet accusamus voluptatum repellat fugit, saepe adipisci voluptatem possimus est dolor molestias ullam neque ipsam in maxime ut a dolore deleniti!
+                </p>
+            </section>
+            <hr />
+            <div className="fila">
+                <div className="columna33">
+                    <h3>Inovação</h3>
+                    <img src="https://via.placeholder.com/280" alt="foto_agenda" />
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt amet accusamus voluptatum repellat fugit, saepe adipisci voluptatem possimus est dolor molestias ullam neque ipsam in maxime ut a dolore deleniti!</p>
+                </div>
+                <div className="columna33">
+                    <h3>Solidaridade</h3>
+                    <img src="https://via.placeholder.com/280" alt="foto_noticias" />
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quo...</p>
+                    <a href="noticias.html">continuar leyendo...</a>
+                </div>
+                <div className="columna33">
+                    <h3>Eficácia</h3>
+                    <img src="https://via.placeholder.com/280" alt="foto_noticias" />
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quo...</p>
+                </div>
             </div>
-            <div className="columna33">
-                <h3>Actualidad</h3>
-                <img src="img/diario.png" alt="foto_noticias"/>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quo...</p>
-                <a href="noticias.html">continuar leyendo...</a>
-            </div>
-            <div className="columna33">
-                <h3>Socios Al Cuidado</h3>
-                <a href=""><img src="https://via.placeholder.com/130" alt=""/></a>
-                <a href=""><img src="https://via.placeholder.com/130" alt=""/></a>
-                <a href=""><img src="https://via.placeholder.com/130" alt=""/></a>
-                <a href=""><img src="https://via.placeholder.com/130" alt=""/></a>
-            </div>
-        </div>
-    </main>
+            <hr />
+            <section>
+                <h2>Nossos associados</h2>
+                <div className="fila">
+                    <div className="columna100 socios">
+                        <img src="https://via.placeholder.com/150" alt="foto_noticias" />
+                        <img src="https://via.placeholder.com/150" alt="foto_noticias" />
+                        <img src="https://via.placeholder.com/150" alt="foto_noticias" />
+                        <img src="https://via.placeholder.com/150" alt="foto_noticias" />
+                        <img src="https://via.placeholder.com/150" alt="foto_noticias" />
+                        <img src="https://via.placeholder.com/150" alt="foto_noticias" />
+                        <img src="https://via.placeholder.com/150" alt="foto_noticias" />
+                        <img src="https://via.placeholder.com/150" alt="foto_noticias" />
+                        <img src="https://via.placeholder.com/150" alt="foto_noticias" />
+                        <img src="https://via.placeholder.com/150" alt="foto_noticias" />
+                        <img src="https://via.placeholder.com/150" alt="foto_noticias" />
+                        <img src="https://via.placeholder.com/150" alt="foto_noticias" />
+
+                    </div>
+                </div>
+            </section>
+        </main>
     );
 }
 

@@ -1,0 +1,41 @@
+.carousel{
+    height: 320px;
+    display: inline-block;
+}
+
+.socios{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section h2{
+    text-align: center;
+}
+
+.socios img{
+    margin: 25px;
+    height: 170px;
+    width: 170px;
+}
+
+@media (max-width: 960px) {
+    
+    .fila{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .columna33{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+
+    }
+
+    .carousel{
+        display:none;
+    }
+}
+

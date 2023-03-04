@@ -4,6 +4,7 @@ import "./estilos/App.css";
 import "./estilos/Header.css"
 import "./estilos/Footer.css";
 import "./estilos/Nav.css";
+import "./estilos/Homepage.css"
 import "./estilos/Transparencia.css";
 import "./estilos/Associado.css";
 import "./estilos/Stakeholders.css";

@@ -30,6 +30,11 @@ body{
   padding: 10px;
 }
 
+.columna100{
+  width: 100%;
+  padding: 10px;
+}
+
 .fila .columna33 h3{
   color:#004ba2;
   border-bottom: 1px solid #008267;
@@ -42,4 +47,11 @@ body{
 
 .holder p{
   text-align: justify;
+}
+
+@media (max-width: 960px){
+  .holder{
+    width: 90%;
+    margin-top: 10px;
+  }
 }

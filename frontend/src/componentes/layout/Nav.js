@@ -15,7 +15,7 @@ const Nav = (props) => {
                         <li><NavLink to="/transparencia" className={({isActive})=>isActive ? "activo":undefined} onClick={ () => setIsOpen(false)}>TRANSPARENCIA</NavLink></li>
                         <li><NavLink to="/stakeholders" className={({isActive})=>isActive ? "activo":undefined} onClick={ () => setIsOpen(false)}>STAKEHOLDERS</NavLink></li>
                         <li><NavLink to="/associado" className={({isActive})=>isActive ? "activo":undefined} onClick={ () => setIsOpen(false)}>AREA DO ASSOCIADO</NavLink></li>
-                        <li><NavLink to="/contato" className={({isActive})=>isActive ? "activo":undefined} onClick={ () => setIsOpen(false)}>CONTATE</NavLink></li>
+                        <li><NavLink to="/contato" className={({isActive})=>isActive ? "activo":undefined} onClick={ () => setIsOpen(false)}>CONTATO</NavLink></li>
                     </ul>   
                 </div>
             <div className={`dinamica ${isOpen && "open"}`} onClick={ () => setIsOpen(!isOpen)} >
