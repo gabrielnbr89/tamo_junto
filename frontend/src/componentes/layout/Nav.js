@@ -7,7 +7,7 @@ const Nav = (props) => {
     const [isOpen, setIsOpen] = useState(false)
     return (
         <nav className="holder">
-                <img src="img/Logo_120.png" alt="TMJ" />
+                <img src="img/logo.png" alt="TMJ" />
                 <div className='estatica'>
                     <ul className={`items ${isOpen && "open"}`}>
                         <li><NavLink to="/" className={({isActive})=>isActive ? "activo":undefined} onClick={ () => setIsOpen(false)}>HOME</NavLink></li>
