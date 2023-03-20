@@ -1,13 +1,13 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-
+import Counter from '../componentes/animations/Counter.js';
 
 
 const HomePage = (props) => {
     return (
         <main className="holder">
-            <Carousel className="carousel" autoPlay interval={5000} showThumbs={false}>
+            {/* <Carousel className="carousel" autoPlay interval={5000} showThumbs={false}>
                 <div>
                     <img src="https://via.placeholder.com/960x320" alt="imagen1" />
                     <p className="legend">Legend 1</p>
@@ -20,36 +20,43 @@ const HomePage = (props) => {
                     <img src="https://via.placeholder.com/960x320" alt="imagen3" />
                     <p className="legend">Legend 3</p>
                 </div>
-            </Carousel>
-
-
+            </Carousel> */}
             <section>
-                <h2>Bem-vindo!</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt amet accusamus voluptatum repellat fugit, saepe adipisci voluptatem possimus est dolor molestias ullam neque ipsam in maxime ut a dolore deleniti!
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt amet accusamus voluptatum repellat fugit, saepe adipisci voluptatem possimus est dolor molestias ullam neque ipsam in maxime ut a dolore deleniti!
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt amet accusamus voluptatum repellat fugit, saepe adipisci voluptatem possimus est dolor molestias ullam neque ipsam in maxime ut a dolore deleniti!
-                </p>
+                <h2>Contribuímos ao acesso da população à saúde através da
+                    convivência e integração entre as estruturas públicas,
+                    privadas e o terceiro setor, visando uma assistência com
+                    maior qualidade e eficiência.
+                </h2>
             </section>
             <hr />
             <div className="fila">
                 <div className="columna33">
-                    <h3>Inovação</h3>
-                    <img src="https://via.placeholder.com/280" alt="foto_agenda" />
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt amet accusamus voluptatum repellat fugit, saepe adipisci voluptatem possimus est dolor molestias ullam neque ipsam in maxime ut a dolore deleniti!</p>
+                    <img src="https://via.placeholder.com/280" alt="foto_teleconsulta" />
+                    <h3>Tecnologia inovadora</h3>
+                    <p>Novas tecnologias para solucionar de forma inovadora e escalável desafios de prevenção e promoção à saúde.</p>
+                    <a>Teleconsulta</a><br/>
+                    <a>Política Privacidade dados</a>
                 </div>
                 <div className="columna33">
-                    <h3>Solidaridade</h3>
-                    <img src="https://via.placeholder.com/280" alt="foto_noticias" />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quo...</p>
-                    <a href="noticias.html">continuar leyendo...</a>
+                    <img src="https://via.placeholder.com/280" alt="foto_associados" />
+                    <h3>Projetos e Sub-projetos</h3>
+                    <p>Cuidando do meu diabetes com uma pequena ajuda dos meus amigos.</p>
+                    <a>Projetos e Sub-projetos</a><br/>
+                    <a href="/stakeholders">Stakeholders</a>
                 </div>
                 <div className="columna33">
-                    <h3>Eficácia</h3>
                     <img src="https://via.placeholder.com/280" alt="foto_noticias" />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quo...</p>
+                    <h3>Gestão do cuidado</h3>
+                    <p>Uma adequada GESTÃO da doença como forma para manter o sistema funcionando em harmonia.</p>
+                    <a>Gestão gcdc</a><br/>
+                    <a>Atualizações</a><br/>
+                    <a>Transparencia</a>
                 </div>
             </div>
             <hr />
+            <div className="socios">           
+                    <Counter/>
+            </div>
             <section>
                 <h2>Nossos associados</h2>
                 <div className="fila">

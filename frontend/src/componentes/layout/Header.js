@@ -7,7 +7,7 @@ const Header = (props) => {
   return (
     <header className='holder' >
 
-      <h2>A Tamo junto no diabetes tem como objetivo a gestao de nossos pacientes diabéticos ser mais
+      <h2>A TMJND tem como objetivo a gestão de nossos associados diabéticos ser mais
     
     <TypeAnimation
     // Same String at the start will only be typed once, initially
