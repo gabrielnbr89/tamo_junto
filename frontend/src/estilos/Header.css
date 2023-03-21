@@ -9,7 +9,7 @@ header h2{
 
 @media (max-width: 960px) {
 header{
-    height: 230px;
+    height: 160px;
 }
 header h2{
     margin-top: 5px;
