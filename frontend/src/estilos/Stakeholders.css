@@ -1,4 +1,4 @@
-.servicio{
+.stakeholder_card{
     border: solid 1px grey;
     border-radius: 8px;
     padding: 6px;
@@ -9,22 +9,32 @@
     align-items: center;
 }
 
-.servicio .info_servicio h3{
+.stakeholder_card .stakeholder_info h3{
     font-style: italic;
-    color:#004ba2;
-    border-bottom: 1px solid #008267;
+    color:#f1b000;
+    border-bottom: 1px solid #289dd2;
     padding-bottom: 8px;
 }
 
-.servicio .info_servicio p{
+.stakeholder_card .stakeholder_info p{
     font-size: 14px;
 }
 
-.servicio img{
+.stakeholder_card .stakeholder_info .comentario{
+    color:#f1b000;
+}
+
+.stakeholder_card img{
     display: block;
     border-radius: 8px;
 }
 
-.servicio:nth-child(even){
+.stakeholder_card:nth-child(even){
     flex-direction: row-reverse;
+}
+
+@media (max-width: 960px) {
+    .stakeholder_card:nth-child(n+1){
+        flex-direction: column;
+    }
 }
