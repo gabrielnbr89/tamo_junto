@@ -1,51 +1,74 @@
 import React from "react";
 
-const ServiciosPage = (props) => {
-    return(
+const StakeholdersPage = (props) => {
+    return (
         <main className="holder">
-        <h2>Servicios</h2>
-        <hr/>
-        <div className="servicio">
-            <img src="img/relacion_empresa.png" alt="relacion_empresa"/>
-            <div className="info_servicio">
-                <h3>Conectamos con empresas</h3>
-                <p>
-                    La fundación se encarga de contactar con las empresas que estén interesadas en apoyar la causa.
-                    No realizamos el contacto deliveradamente, sino que en principio nos damos a conocer mediante un programa de divulgación.
-                    Luego esperamos que los interesados nos contacten, y de esa manera se genera el vínculo.
-                    Una vez que la empresa expresa su voluntad de pertenecer. Realizamos todos los tramites pertinentes y de ser necesario asesoramos a los interesados
-                    para que la asociación sea exitosa.
-                </p>
+            {/* <h2>STAKEHOLDERS</h2> */}
+            <hr />
+            <div className="stakeholder_card">
+                <img src="img/maos.png" alt="maos" />
+                <div className="stakeholder_info">
+                    <h3>STAKEHOLDERS</h3>
+                    <p>
+                        Stakeholders significa público estratégico e descreve todas as pessoas ou
+                        "grupo de interesse" que são impactados pelas ações de um empreendimento,
+                        projeto, empresa ou negócio. Em inglês stake significa interesse,
+                        participação , risco. Holder significa aquele que possui. Assim, stakeholder
+                        também significa parte interessada ou interveniente.
+                    </p>
+                    <p className="comentario">
+                        São os stakeholders que legitimam as ações de uma organização  e tem um papel
+                        de influência para a gestão e os resultados dessa mesma organização.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div className="servicio">
-            <img src="img/doctora_consulta.png" alt="doctora_consulta"/>
-            <div className="info_servicio">
-                <h3>Administramos el tratamiento de pacientes diabéticos</h3>
-                <p>
-                    Contamos con diferentes programas de captacion de pacientes con dificultades para ingresar a la salud pública o privada.
-                    Del mismo modo captamos clínicas y médicos voluntarios que atiendan la salud de esos pacientes.
-                    Ponemos a disposición los medios necesarios para iniciar el vínculo y garantizar la permanencia de los pacientes en sus tratamientos. 
-                </p>
+            <div className="stakeholder_card">
+                <img src="img/maos_dotores.png" alt="maos_dotores" />
+                <div className="stakeholder_info">
+                    <h3>MODELO DE RESPONSABILIDADE SOCIAL</h3>
+                    <p>
+                        Na TMJND entendemos a importância dos stakeholders (pessoas ou empresas que
+                        estejam relacionadas com o projeto) onde a TMJND é vista como uma organização
+                        social que deve trazer algum tipo de benefício a todas as pessoas envolvidas
+                        no processo. Modelo de responsabilidade social que dá valor à vertente social
+                        e retributiva, visando um equilíbrio social.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div className="servicio">
-            <img src="img/teleconsulta.png" alt="teleconsulta"/>
-            <div className="info_servicio">
-                <h3>Conectamos a los pacientes con médicos especialiestas</h3>
-                <p>
-                La fundación cuenta con clínicas asociadas voluntariamente, las cuales prestan servicios de salud a los pacientes diabéticos beneficiados por nuestra fundación.
-                    Nosotros mediamos el contacto del paciente con su médico, y nos aseguramos de que tanto el médico como el paciente cuenten con todo lo necesario para llevar adelante el tratamiento.
-                    Realizamos un seguimiento para asegurarnos que el paciente se encuentre efectivamente transitando el tratamiento y facilitamos su permanencia.
-                    
-                </p>
+            <div className="stakeholder_card">
+                <img src="img/bonecos.png" alt="bonecos" />
+                <div className="stakeholder_info">
+                    <h3>SOLIDARIDADE EM AÇÃO</h3>
+                    <p>
+                        O princípio pelo qual a Associação “TAMO JUNTO NO DIABETES” foi idealizada e
+                        criada, e que rege toda a sua atuação em todos os âmbitos, é o princípio da
+                        SOLIDARIEDADE: acreditamos que o esforço organizado de todos os atores
+                        comprometidos (Tamo Junto!!) vai potencializar o resultado esperado, de tal
+                        maneira que tanto aqueles que solidariamente oferecem seus recursos e habilidades
+                        (empresas de capital privado, médicos, profissionais da saúde, laboratórios, farmácias,
+                        etc.), quanto estes (associados) que recebem os benefícios do CUIDADO CONTINUO e
+                        respondem através de mudanças de hábitos e comportamentos para um melhor controle
+                        da doença, contribuem para criar uma sociedade com mais harmonia baseada nesse
+                        princípio de Solidariedade mútua.
+                    </p>
+                </div>
             </div>
-        </div>
 
-    </main>
+            <div className="stakeholder_card">
+                <img src="" alt="mapa" />
+                <div className="stakeholder_info">
+                    <h3>MAPA DE STAKEHOLDERS</h3>
+                    <p>
+                        É uma ferramenta capaz de auxiliar e entender melhor quem são as 
+                        partes interessadas em seu projeto.
+                    </p>
+                </div>
+            </div>
+
+        </main>
     );
 }
 
-export default ServiciosPage;
+export default StakeholdersPage;
