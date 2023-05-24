@@ -35,7 +35,7 @@ hr{
     .columna33{
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 90%;
         align-items: justify;
         border-bottom: 1px solid #289dd2;
     }
