@@ -14,22 +14,37 @@ hr{
     border-color: #289dd2;
 }
 
+.negrita{
+    font-weight: bold;
+}
+
+.negrita a{
+    color: deeppink;
+}
+
+.resumen{
+    align-items: center;
+}
+
+.resumenes :nth-child(even){
+    flex-direction: row-reverse;
+}
+
 .socios img{
     margin: 25px;
     height: 170px;
     width: 170px;
 }
 
-/* .carousel{
-    height: 320px;
-    display: inline-block;
-} */
-
 @media (max-width: 960px) {
     
     .fila{
         flex-direction: column;
         align-items: center;
+    }
+
+    .resumenes :nth-child(n+1){
+        flex-direction: column-reverse;
     }
 
     .columna33{
@@ -40,8 +55,13 @@ hr{
         border-bottom: 1px solid #289dd2;
     }
 
-    /* .carousel{
-        display:none;
-    } */
+    .columna67{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: justify;
+        border-bottom: 1px solid #289dd2;
+    }
+
 }
 
