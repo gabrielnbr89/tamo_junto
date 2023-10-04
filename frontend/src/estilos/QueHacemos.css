@@ -1,0 +1,40 @@
+.quehacemos_card{
+    border: solid 1px grey;
+    border-radius: 8px;
+    padding: 6px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.quehacemos_card .quehacemos_info h3{
+    font-style: italic;
+    color:#f1b000;
+    border-bottom: 1px solid #289dd2;
+    padding-bottom: 8px;
+}
+
+.quehacemos_card .quehacemos_info p{
+    font-size: 14px;
+}
+
+.quehacemos_card .quehacemos_info .comentario{
+    color:#f1b000;
+}
+
+.quehacemos_card img{
+    display: block;
+    border-radius: 8px;
+}
+
+.quehacemos_card:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 960px) {
+    .quehacemos_card:nth-child(n+1){
+        flex-direction: column;
+    }
+}

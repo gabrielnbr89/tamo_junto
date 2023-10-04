@@ -1,0 +1,60 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.holder{
+    max-width: 960px;
+    margin: 0;
+    
+}
+
+header{
+    background-color:white;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header img{
+    vertical-align: baseline;
+}
+
+header div{
+    padding-left: 50px;
+    display: inline-block;
+}
+
+header div h1{
+    color: #004ba2;
+    font-size: 35px;
+    position: relative;
+    bottom: 7px;
+    text-align: center;
+}
+header div h2{
+    color: #f78215;
+    font-size: 18;
+}
+
+footer{
+    background-color: white;
+    clear:both;
+    text-align:center;
+    margin-top: 16px;
+    padding: 30px;
+}
+
+.loginform{
+    padding: 30px;
+}
+
+.loginform button{
+    margin-top: 15px;
+}
+
+.novedades{
+    margin: 50px;
+}

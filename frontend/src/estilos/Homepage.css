@@ -1,0 +1,92 @@
+.socios{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section h2{
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.5;
+    color: rgb(211, 211, 211);
+}
+
+hr{
+    border-color: #289dd2;
+}
+
+.fila .columna33 a{
+    font-weight: bold;
+    color: blue;
+    text-decoration: none;
+}
+
+.negrita{
+    font-weight: bold;
+    color: blue;
+}
+
+.negrita a{
+    color: blue;
+    text-decoration: none;
+}
+
+.saibamais1{
+    background-color: blue;
+}
+
+.resumen{
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.resumen p{
+    line-height: 1.5;
+}
+
+.resumenes :nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.socios img{
+    margin: 25px;
+    height: 170px;
+    width: 170px;
+}
+
+@media (max-width: 960px) {
+    
+    .fila{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resumenes :nth-child(n+1){
+        flex-direction: column-reverse;
+    }
+
+    .columna33{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: justify;
+        border-bottom: 1px solid #289dd2;
+    }
+
+    .columna67{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: justify;
+        border-bottom: 1px solid #289dd2;
+    }
+
+    section h2{
+        font-size: 15px;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+}
+

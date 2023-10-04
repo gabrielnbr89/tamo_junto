@@ -1,0 +1,47 @@
+<div class="container novedades">
+    <div class="row">
+        <div class="col-9">
+            <h2 class="text-right">Hola {{usuario}}!</h2>
+        </div>
+        <div class="col-3">
+            <a class="btn btn-danger" href="/admin/login/logout">Cerrar sesión <i class="bi bi-door-open"></i></a>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-9">
+            <h3>Listado de entradas</h3>
+        </div>
+        <div class="col-3 text-right">
+            <a href="/admin/novedades/agregar" class="btn btn-primary"> <i class="bi bi-plus"></i>Nuevo</a>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Título</th>
+                        <th scope="col">Imagen</th>
+                        <th scope="col" class="text-center">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each novedades}}
+                    <tr>
+                        <th scope="row">{{id}}</th>
+                        <td>{{titulo}}</td>
+                        <td>{{{imagen}}}</td>
+                        <td class="text-center">
+                            <a href="/admin/novedades/editar/{{id}}" class="btn btn-sm btn-scondary"><i class="bi bi-pencil"></i></a>
+                            <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-sm btn-secondary"> <i class="bi bi-trash"></i></a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
